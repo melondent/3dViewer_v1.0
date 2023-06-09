@@ -29,4 +29,4 @@ In terminal go to project folder and run make uninstall.
 
 ## App
 
-In the folder "3dViewer_v1.0" you can find the already builded app.
+In the folder "3dViewer_v1" you can find the already builded app.
