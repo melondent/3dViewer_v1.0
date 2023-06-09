@@ -4,6 +4,7 @@
 Program to view 3D wireframe models in the C programming language. The models themselves must be loaded from .obj files and be viewable on the screen with the ability to rotate, scale and translate.
 
 The app also allow:
+
     - customizing the type of projection (parallel and central),
 
     - setting up the type, color and thickness of the edges, display method, color and size of the vertices,
@@ -13,7 +14,7 @@ The app also allow:
     - saving settings between program restarts,
 
     - saving the captured (rendered) images as bmp and jpeg files,
-    
+
     - recording small screencasts.
 
 ![3DViewer](images/3dviewer_1.png)
