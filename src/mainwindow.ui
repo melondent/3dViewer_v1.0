@@ -1,0 +1,2666 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1200</width>
+    <height>500</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1200</width>
+    <height>500</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1200</width>
+    <height>500</height>
+   </size>
+  </property>
+  <property name="font">
+   <font>
+    <family>Arial</family>
+   </font>
+  </property>
+  <property name="contextMenuPolicy">
+   <enum>Qt::DefaultContextMenu</enum>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background: rgb(214, 214, 214);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="OGWidget" name="widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>640</width>
+      <height>480</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QStackedWidget" name="stackedWidget">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>60</y>
+      <width>511</width>
+      <height>381</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>511</width>
+      <height>381</height>
+     </size>
+    </property>
+    <property name="currentIndex">
+     <number>2</number>
+    </property>
+    <widget class="QWidget" name="page_2"/>
+    <widget class="QWidget" name="MoveObject">
+     <widget class="QGroupBox" name="Move">
+      <property name="geometry">
+       <rect>
+        <x>2</x>
+        <y>83</y>
+        <width>230</width>
+        <height>291</height>
+       </rect>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>230</width>
+        <height>300</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background: rgb(192, 192, 192);
+border-radius: 20px; 
+</string>
+      </property>
+      <property name="title">
+       <string/>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_5">
+       <item row="0" column="0">
+        <widget class="QGroupBox" name="MoveX_BoxMain">
+         <property name="font">
+          <font>
+           <family>Arial</family>
+           <pointsize>14</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background: rgb(214, 214, 214);
+border-radius: 10px;
+
+</string>
+         </property>
+         <property name="title">
+          <string>X</string>
+         </property>
+         <widget class="QPushButton" name="pushButton_MoveX_minus">
+          <property name="geometry">
+           <rect>
+            <x>14</x>
+            <y>21</y>
+            <width>40</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Arial</family>
+            <pointsize>18</pointsize>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+   	background-color: rgb(235, 235, 235);
+	color: rgb(255, 71, 0);
+	border-radius: 10px;
+}
+
+QPushButton:pressed {
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb(255, 197, 0), stop:1 rgb(255, 71, 0));
+	color: rgb(0, 0, 0);
+	border-radius: 10px;
+	font-size: 22px;
+}
+
+
+</string>
+          </property>
+          <property name="text">
+           <string>-</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pushButton_MoveX_plus">
+          <property name="geometry">
+           <rect>
+            <x>70</x>
+            <y>21</y>
+            <width>40</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Arial</family>
+            <pointsize>18</pointsize>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+   	background-color: rgb(235, 235, 235);
+	color: rgb(1, 225, 7);
+	border-radius: 10px;
+}
+
+QPushButton:pressed {
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb(229, 255, 0), stop:1 rgb(1, 225, 7));
+	color: rgb(0, 0, 0);
+	border-radius: 10px;
+	font-size: 22px;
+}
+
+
+
+</string>
+          </property>
+          <property name="text">
+           <string>+</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="MoveX_value">
+          <property name="geometry">
+           <rect>
+            <x>132</x>
+            <y>21</y>
+            <width>60</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>60</width>
+            <height>20</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Arial</family>
+            <pointsize>14</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(235, 235, 235);</string>
+          </property>
+         </widget>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QGroupBox" name="MoveY_BoxMain">
+         <property name="font">
+          <font>
+           <family>Arial</family>
+           <pointsize>14</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background: rgb(214, 214, 214);
+border-radius: 10px; 
+</string>
+         </property>
+         <property name="title">
+          <string>Y</string>
+         </property>
+         <widget class="QPushButton" name="pushButton_MoveY_minus">
+          <property name="geometry">
+           <rect>
+            <x>14</x>
+            <y>22</y>
+            <width>40</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Arial</family>
+            <pointsize>18</pointsize>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+   	background-color: rgb(235, 235, 235);
+	color: rgb(255, 71, 0);
+	border-radius: 10px;
+}
+
+QPushButton:pressed {
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb(255, 197, 0), stop:1 rgb(255, 71, 0));
+	color: rgb(0, 0, 0);
+	border-radius: 10px;
+	font-size: 22px;
+}
+
+
+</string>
+          </property>
+          <property name="text">
+           <string>-</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pushButton_MoveY_plus">
+          <property name="geometry">
+           <rect>
+            <x>70</x>
+            <y>22</y>
+            <width>40</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Arial</family>
+            <pointsize>18</pointsize>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+   	background-color: rgb(235, 235, 235);
+	color: rgb(1, 225, 7);
+	border-radius: 10px;
+}
+
+QPushButton:pressed {
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb(229, 255, 0), stop:1 rgb(1, 225, 7));
+	color: rgb(0, 0, 0);
+	border-radius: 10px;
+	font-size: 22px;
+}
+
+
+
+</string>
+          </property>
+          <property name="text">
+           <string>+</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="MoveY_value">
+          <property name="geometry">
+           <rect>
+            <x>132</x>
+            <y>22</y>
+            <width>60</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>60</width>
+            <height>20</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Arial</family>
+            <pointsize>14</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(235, 235, 235);</string>
+          </property>
+         </widget>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QGroupBox" name="MoveZ_BoxMain">
+         <property name="font">
+          <font>
+           <family>Arial</family>
+           <pointsize>14</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background: rgb(214, 214, 214);
+border-radius: 10px; 
+</string>
+         </property>
+         <property name="title">
+          <string>Z</string>
+         </property>
+         <widget class="QPushButton" name="pushButton_MoveZ_minus">
+          <property name="geometry">
+           <rect>
+            <x>14</x>
+            <y>21</y>
+            <width>40</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Arial</family>
+            <pointsize>18</pointsize>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+   	background-color: rgb(235, 235, 235);
+	color: rgb(255, 71, 0);
+	border-radius: 10px;
+}
+
+QPushButton:pressed {
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb(255, 197, 0), stop:1 rgb(255, 71, 0));
+	color: rgb(0, 0, 0);
+	border-radius: 10px;
+	font-size: 22px;
+}
+
+
+</string>
+          </property>
+          <property name="text">
+           <string>-</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pushButton_MoveZ_plus">
+          <property name="geometry">
+           <rect>
+            <x>70</x>
+            <y>21</y>
+            <width>40</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Arial</family>
+            <pointsize>18</pointsize>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+   	background-color: rgb(235, 235, 235);
+	color: rgb(1, 225, 7);
+	border-radius: 10px;
+}
+
+QPushButton:pressed {
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb(229, 255, 0), stop:1 rgb(1, 225, 7));
+	color: rgb(0, 0, 0);
+	border-radius: 10px;
+	font-size: 22px;
+}
+
+
+
+</string>
+          </property>
+          <property name="text">
+           <string>+</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="MoveZ_value">
+          <property name="geometry">
+           <rect>
+            <x>132</x>
+            <y>21</y>
+            <width>60</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>60</width>
+            <height>20</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Arial</family>
+            <pointsize>14</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(235, 235, 235);</string>
+          </property>
+         </widget>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="QPushButton" name="setMove">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>31</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>Arial</family>
+           <pointsize>14</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+	border-radius: 12px; 
+	color: rgb(94, 94, 94);
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb(61, 217, 245), stop:1 rgb(235, 235, 235));
+}
+
+QPushButton:pressed {
+   	color: rgb(0, 0, 0);
+	border-radius: 12px;  
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb(61, 217, 245), stop:1 rgb(235, 235, 235));
+	font-size: 16px;
+}
+
+
+</string>
+         </property>
+         <property name="text">
+          <string>Move</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QGroupBox" name="Zoom">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>0</y>
+        <width>270</width>
+        <height>70</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>270</width>
+        <height>70</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background: rgb(192, 192, 192);
+border-radius: 20px; 
+
+
+</string>
+      </property>
+      <property name="title">
+       <string/>
+      </property>
+      <widget class="QPushButton" name="moveButtonZoomOut">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>40</y>
+         <width>110</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>110</width>
+         <height>20</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>110</width>
+         <height>20</height>
+        </size>
+       </property>
+       <property name="sizeIncrement">
+        <size>
+         <width>0</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Arial</family>
+         <pointsize>28</pointsize>
+         <italic>false</italic>
+         <bold>false</bold>
+         <stylestrategy>PreferDefault</stylestrategy>
+         <kerning>true</kerning>
+        </font>
+       </property>
+       <property name="tabletTracking">
+        <bool>false</bool>
+       </property>
+       <property name="focusPolicy">
+        <enum>Qt::TabFocus</enum>
+       </property>
+       <property name="layoutDirection">
+        <enum>Qt::LeftToRight</enum>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+   	background-color: rgb(235, 235, 235);
+	color: rgb(240, 53, 218);
+	border-radius: 10px;
+}
+
+QPushButton:pressed {
+	border-radius: 10px;  
+color: rgb(235, 235, 235);
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb(240, 53, 218), stop:1 rgb(61, 217, 245));
+	font-size: 32px;
+}
+
+
+
+
+
+
+
+</string>
+       </property>
+       <property name="text">
+        <string>-</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="moveButtonZoomIn">
+       <property name="geometry">
+        <rect>
+         <x>140</x>
+         <y>40</y>
+         <width>110</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>110</width>
+         <height>20</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>110</width>
+         <height>20</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Arial</family>
+         <pointsize>28</pointsize>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+   	background-color: rgb(235, 235, 235);
+	color: rgb(61, 217, 245);
+	border-radius: 10px;
+}
+
+QPushButton:pressed {
+	border-radius: 10px;  
+color: rgb(235, 235, 235);
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb(61, 217, 245), stop:1 rgb(240, 53, 218));
+	font-size: 32px;
+}
+
+
+
+</string>
+       </property>
+       <property name="text">
+        <string>+</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="setZoom">
+       <property name="geometry">
+        <rect>
+         <x>140</x>
+         <y>10</y>
+         <width>110</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>20</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Arial</family>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+	border-radius: 10px; 
+	color: rgb(94, 94, 94);
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb(240, 53, 218), stop:1 rgb(61, 217, 245));
+}
+
+QPushButton:pressed {
+   	color: rgb(0, 0, 0);
+	border-radius: 10px;  
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb(240, 53, 218), stop:1 rgb(61, 217, 245));
+	font-size: 16px;
+}
+
+
+</string>
+       </property>
+       <property name="text">
+        <string>Zoom</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="Zoom_value">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>10</y>
+         <width>110</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>110</width>
+         <height>20</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Arial</family>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(235, 235, 235);
+border-radius: 10px; </string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="Rotation">
+      <property name="geometry">
+       <rect>
+        <x>259</x>
+        <y>83</y>
+        <width>230</width>
+        <height>291</height>
+       </rect>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>230</width>
+        <height>300</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background: rgb(192, 192, 192);
+border-radius: 20px; 
+</string>
+      </property>
+      <property name="title">
+       <string/>
+      </property>
+      <widget class="QGroupBox" name="RotationX_BoxMain">
+       <property name="geometry">
+        <rect>
+         <x>12</x>
+         <y>12</y>
+         <width>206</width>
+         <height>63</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Arial</family>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background: rgb(214, 214, 214);
+border-radius: 10px;
+
+</string>
+       </property>
+       <property name="title">
+        <string>X</string>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout_4">
+        <item>
+         <widget class="QPushButton" name="pushButton_RotationX_minus">
+          <property name="maximumSize">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Arial</family>
+            <pointsize>18</pointsize>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+   	background-color: rgb(235, 235, 235);
+	color: rgb(255, 71, 0);
+	border-radius: 10px;
+}
+
+QPushButton:pressed {
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb(255, 197, 0), stop:1 rgb(255, 71, 0));
+	color: rgb(0, 0, 0);
+	border-radius: 10px;
+	font-size: 22px;
+}
+
+
+</string>
+          </property>
+          <property name="text">
+           <string>-</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButton_RotationX_plus">
+          <property name="maximumSize">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Arial</family>
+            <pointsize>18</pointsize>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+   	background-color: rgb(235, 235, 235);
+	color: rgb(1, 225, 7);
+	border-radius: 10px;
+}
+
+QPushButton:pressed {
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb(229, 255, 0), stop:1 rgb(1, 225, 7));
+	color: rgb(0, 0, 0);
+	border-radius: 10px;
+	font-size: 22px;
+}
+
+
+
+</string>
+          </property>
+          <property name="text">
+           <string>+</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="RotationX_value">
+          <property name="maximumSize">
+           <size>
+            <width>60</width>
+            <height>20</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Arial</family>
+            <pointsize>14</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(235, 235, 235);</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QGroupBox" name="RotationY_BoxMain">
+       <property name="geometry">
+        <rect>
+         <x>12</x>
+         <y>91</y>
+         <width>206</width>
+         <height>64</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Arial</family>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background: rgb(214, 214, 214);
+border-radius: 10px; 
+</string>
+       </property>
+       <property name="title">
+        <string>Y</string>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout_6">
+        <item>
+         <widget class="QPushButton" name="pushButton_RotationY_minus">
+          <property name="maximumSize">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Arial</family>
+            <pointsize>18</pointsize>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+   	background-color: rgb(235, 235, 235);
+	color: rgb(255, 71, 0);
+	border-radius: 10px;
+}
+
+QPushButton:pressed {
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb(255, 197, 0), stop:1 rgb(255, 71, 0));
+	color: rgb(0, 0, 0);
+	border-radius: 10px;
+	font-size: 22px;
+}
+
+
+</string>
+          </property>
+          <property name="text">
+           <string>-</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButton_RotationY_plus">
+          <property name="maximumSize">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Arial</family>
+            <pointsize>18</pointsize>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+   	background-color: rgb(235, 235, 235);
+	color: rgb(1, 225, 7);
+	border-radius: 10px;
+}
+
+QPushButton:pressed {
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb(229, 255, 0), stop:1 rgb(1, 225, 7));
+	color: rgb(0, 0, 0);
+	border-radius: 10px;
+	font-size: 22px;
+}
+
+
+
+</string>
+          </property>
+          <property name="text">
+           <string>+</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="RotationY_value">
+          <property name="maximumSize">
+           <size>
+            <width>60</width>
+            <height>20</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Arial</family>
+            <pointsize>14</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(235, 235, 235);</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QGroupBox" name="RotationZ_BoxMain">
+       <property name="geometry">
+        <rect>
+         <x>15</x>
+         <y>169</y>
+         <width>206</width>
+         <height>63</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Arial</family>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background: rgb(214, 214, 214);
+border-radius: 10px; 
+</string>
+       </property>
+       <property name="title">
+        <string>Z</string>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout_7">
+        <item>
+         <widget class="QPushButton" name="pushButton_RotationZ_minus">
+          <property name="minimumSize">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Arial</family>
+            <pointsize>18</pointsize>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+   	background-color: rgb(235, 235, 235);
+	color: rgb(255, 71, 0);
+	border-radius: 10px;
+}
+
+QPushButton:pressed {
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb(255, 197, 0), stop:1 rgb(255, 71, 0));
+	color: rgb(0, 0, 0);
+	border-radius: 10px;
+	font-size: 22px;
+}
+
+
+</string>
+          </property>
+          <property name="text">
+           <string>-</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButton_RotationZ_plus">
+          <property name="maximumSize">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Arial</family>
+            <pointsize>18</pointsize>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+   	background-color: rgb(235, 235, 235);
+	color: rgb(1, 225, 7);
+	border-radius: 10px;
+}
+
+QPushButton:pressed {
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb(229, 255, 0), stop:1 rgb(1, 225, 7));
+	color: rgb(0, 0, 0);
+	border-radius: 10px;
+	font-size: 22px;
+}
+
+
+
+</string>
+          </property>
+          <property name="text">
+           <string>+</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="RotationZ_value">
+          <property name="maximumSize">
+           <size>
+            <width>60</width>
+            <height>20</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Arial</family>
+            <pointsize>14</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(235, 235, 235);</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QPushButton" name="setRotation">
+       <property name="geometry">
+        <rect>
+         <x>15</x>
+         <y>244</y>
+         <width>200</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>200</width>
+         <height>31</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>200</width>
+         <height>31</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Arial</family>
+         <pointsize>14</pointsize>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+	border-radius: 12px; 
+	color: rgb(94, 94, 94);
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb(235, 235, 235), stop:1 rgb(240, 53, 218));
+}
+
+QPushButton:pressed {
+   	color: rgb(0, 0, 0);
+	border-radius: 12px;  
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb(235, 235, 235), stop:1 rgb(240, 53, 218));
+	font-size: 16px;
+}
+
+
+</string>
+       </property>
+       <property name="text">
+        <string>Rotation</string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="Settings">
+     <widget class="QGroupBox" name="changeColor">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>0</y>
+        <width>404</width>
+        <height>101</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>404</width>
+        <height>101</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background: rgb(192, 192, 192);
+border-radius: 20px; 
+
+
+</string>
+      </property>
+      <property name="title">
+       <string>Change color</string>
+      </property>
+      <widget class="QLabel" name="label_3">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>15</x>
+         <y>30</y>
+         <width>111</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>20</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Arial</family>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Line</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="lineColor">
+       <property name="geometry">
+        <rect>
+         <x>12</x>
+         <y>56</y>
+         <width>120</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>117</width>
+         <height>25</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>120</width>
+         <height>25</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Arial</family>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QComboBox {
+    border-radius: 12px;
+    padding: 1px 18px 1px 3px;
+    min-width: 6em;
+}
+
+QComboBox:editable {
+    background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb(240, 53, 218), stop:1 rgb(61, 217, 245));
+}
+
+QComboBox:!editable, QComboBox::drop-down:editable {
+     background: rgb(235, 235, 235);
+}
+QComboBox:!editable:on, QComboBox::drop-down:editable:on {
+    background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb(240, 53, 218), stop:1 rgb(61, 217, 245));
+}
+
+QComboBox:on { 
+    padding-top: 3px;
+    padding-left: 4px;
+}
+
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 15px;
+
+    border-left-width: 1px;
+    border-left-color: rgb(255, 47, 146);
+    border-left-style: solid; 
+    border-top-right-radius: 3px; 
+    border-bottom-right-radius: 3px;
+}
+
+QComboBox::down-arrow:on { 
+    top: 1px;
+    left: 1px;
+}</string>
+       </property>
+       <item>
+        <property name="text">
+         <string>White</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Red</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Black</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Blue</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Dark blue</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Gray</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Green</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Yellow</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Orange</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Pink</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Deep pink</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Purple</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Lavender</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QComboBox" name="backgroundColor">
+       <property name="geometry">
+        <rect>
+         <x>142</x>
+         <y>56</y>
+         <width>120</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>117</width>
+         <height>25</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>120</width>
+         <height>25</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Arial</family>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QComboBox {
+    border-radius: 12px;
+    padding: 1px 18px 1px 3px;
+    min-width: 6em;
+}
+
+QComboBox:editable {
+    background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb(240, 53, 218), stop:1 rgb(61, 217, 245));
+}
+
+QComboBox:!editable, QComboBox::drop-down:editable {
+     background: rgb(235, 235, 235);
+}
+QComboBox:!editable:on, QComboBox::drop-down:editable:on {
+    background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb(240, 53, 218), stop:1 rgb(61, 217, 245));
+}
+
+QComboBox:on { 
+    padding-top: 3px;
+    padding-left: 4px;
+}
+
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 15px;
+
+    border-left-width: 1px;
+    border-left-color: rgb(122, 129, 255);
+    border-left-style: solid; 
+    border-top-right-radius: 3px; 
+    border-bottom-right-radius: 3px;
+}
+
+QComboBox::down-arrow:on { 
+    top: 1px;
+    left: 1px;
+}</string>
+       </property>
+       <item>
+        <property name="text">
+         <string>Black</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>White</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Red</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Blue</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Dark blue</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Gray</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Green</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Yellow</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Orange</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Pink</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Deep pink</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Purple</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Lavender</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QComboBox" name="vertexColor">
+       <property name="geometry">
+        <rect>
+         <x>272</x>
+         <y>56</y>
+         <width>120</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>117</width>
+         <height>25</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>120</width>
+         <height>25</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Arial</family>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QComboBox {
+    border-radius: 12px;
+    padding: 1px 18px 1px 3px;
+    min-width: 6em;
+}
+
+QComboBox:editable {
+    background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb(240, 53, 218), stop:1 rgb(61, 217, 245));
+}
+
+QComboBox:!editable, QComboBox::drop-down:editable {
+     background: rgb(235, 235, 235);
+}
+QComboBox:!editable:on, QComboBox::drop-down:editable:on {
+    background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb(240, 53, 218), stop:1 rgb(61, 217, 245));
+}
+
+QComboBox:on { 
+    padding-top: 3px;
+    padding-left: 4px;
+}
+
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 15px;
+
+    border-left-width: 1px;
+    border-left-color: rgb(118, 214, 255);
+    border-left-style: solid; 
+    border-top-right-radius: 3px; 
+    border-bottom-right-radius: 3px;
+}
+
+QComboBox::down-arrow:on { 
+    top: 1px;
+    left: 1px;
+}</string>
+       </property>
+       <item>
+        <property name="text">
+         <string>Red</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>White</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Black</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Blue</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Dark blue</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Gray</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Green</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Yellow</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Orange</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Pink</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Deep pink</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Purple</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Lavender</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QLabel" name="label_4">
+       <property name="geometry">
+        <rect>
+         <x>136</x>
+         <y>30</y>
+         <width>131</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>20</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Arial</family>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Background</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_5">
+       <property name="geometry">
+        <rect>
+         <x>279</x>
+         <y>30</y>
+         <width>101</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>20</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Arial</family>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Vertex</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="changeLine">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>120</y>
+        <width>240</width>
+        <height>120</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background: rgb(192, 192, 192);
+border-radius: 20px; 
+
+
+</string>
+      </property>
+      <property name="title">
+       <string>Change lines</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+      </property>
+      <widget class="QPushButton" name="lineWidthMinus">
+       <property name="geometry">
+        <rect>
+         <x>15</x>
+         <y>40</y>
+         <width>60</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Arial</family>
+         <pointsize>20</pointsize>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+   	background-color: rgb(235, 235, 235);
+	color: rgb(255, 71, 0);
+	border-radius: 10px;
+}
+
+QPushButton:pressed {
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb(255, 197, 0), stop:1 rgb(255, 71, 0));
+	color: rgb(0, 0, 0);
+	border-radius: 10px;
+	font-size: 24px;
+}
+
+
+</string>
+       </property>
+       <property name="text">
+        <string>-</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label">
+       <property name="geometry">
+        <rect>
+         <x>95</x>
+         <y>42</y>
+         <width>46</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Arial</family>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>  Width</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="lineWidthPlus">
+       <property name="geometry">
+        <rect>
+         <x>165</x>
+         <y>40</y>
+         <width>60</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Arial</family>
+         <pointsize>20</pointsize>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+   	background-color: rgb(235, 235, 235);
+	color: rgb(1, 225, 7);
+	border-radius: 10px;
+}
+
+QPushButton:pressed {
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb(229, 255, 0), stop:1 rgb(1, 225, 7));
+	color: rgb(0, 0, 0);
+	border-radius: 10px;
+	font-size: 24px;
+}
+
+
+
+</string>
+       </property>
+       <property name="text">
+        <string>+</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="dottedLineChoice">
+       <property name="geometry">
+        <rect>
+         <x>5</x>
+         <y>80</y>
+         <width>73</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Arial</family>
+         <pointsize>13</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QRadioButton:hover {
+border-radius: 15px; 
+border-style: dotted;
+border-color: rgb(240, 53, 218);
+border-width: 2px; }
+
+QRadioButton:checked {
+border-radius: 15px; 
+border-style: dotted;
+border-color: rgb(240, 53, 218);
+border-width: 2px;}</string>
+       </property>
+       <property name="text">
+        <string>Dotted</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="solidLineChoice">
+       <property name="geometry">
+        <rect>
+         <x>84</x>
+         <y>80</y>
+         <width>59</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Arial</family>
+         <pointsize>13</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QRadioButton:hover {
+border-radius: 15px; 
+border-style: solid;
+border-color: rgb(240, 53, 218);
+border-width: 2px; }
+
+QRadioButton:checked {
+border-radius: 15px; 
+border-style: solid;
+border-color: rgb(240, 53, 218);
+border-width: 2px;}</string>
+       </property>
+       <property name="text">
+        <string>Solid</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="dashedLineChoice">
+       <property name="geometry">
+        <rect>
+         <x>150</x>
+         <y>80</y>
+         <width>82</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Arial</family>
+         <pointsize>13</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QRadioButton:hover {
+border-radius: 15px; 
+border-style: dashed;
+border-color: rgb(240, 53, 218);
+border-width: 2px; }
+
+QRadioButton:checked {
+border-radius: 15px; 
+border-style: dashed;
+border-color: rgb(240, 53, 218);
+border-width: 2px;}</string>
+       </property>
+       <property name="text">
+        <string>Dashed </string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="changeVertexes">
+      <property name="geometry">
+       <rect>
+        <x>249</x>
+        <y>120</y>
+        <width>241</width>
+        <height>120</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background: rgb(192, 192, 192);
+border-radius: 20px; 
+
+
+</string>
+      </property>
+      <property name="title">
+       <string>Change vertexes</string>
+      </property>
+      <widget class="QPushButton" name="vertexSizeMinus">
+       <property name="geometry">
+        <rect>
+         <x>15</x>
+         <y>40</y>
+         <width>60</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Arial</family>
+         <pointsize>20</pointsize>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+   	background-color: rgb(235, 235, 235);
+	color: rgb(255, 71, 0);
+	border-radius: 10px;
+}
+
+QPushButton:pressed {
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb(255, 197, 0), stop:1 rgb(255, 71, 0));
+	color: rgb(0, 0, 0);
+	border-radius: 10px;
+	font-size: 24px;
+}
+
+
+</string>
+       </property>
+       <property name="text">
+        <string>-</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="squareVertexChoice">
+       <property name="geometry">
+        <rect>
+         <x>158</x>
+         <y>80</y>
+         <width>73</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Arial</family>
+         <pointsize>13</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QRadioButton:hover {
+border-radius: 1px; 
+border-style: solid;
+border-color: rgb(61, 217, 245);
+border-width: 2px; }
+
+QRadioButton:checked {
+border-radius: 1px; 
+border-style: solid;
+border-color: rgb(61, 217, 245);
+border-width: 2px; }</string>
+       </property>
+       <property name="text">
+        <string>Square</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_2">
+       <property name="geometry">
+        <rect>
+         <x>98</x>
+         <y>42</y>
+         <width>46</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Arial</family>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>  Size</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="vertexSizePlus">
+       <property name="geometry">
+        <rect>
+         <x>165</x>
+         <y>40</y>
+         <width>60</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Arial</family>
+         <pointsize>20</pointsize>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+   	background-color: rgb(235, 235, 235);
+	color: rgb(1, 225, 7);
+	border-radius: 10px;
+}
+
+QPushButton:pressed {
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb(229, 255, 0), stop:1 rgb(1, 225, 7));
+	color: rgb(0, 0, 0);
+	border-radius: 10px;
+	font-size: 24px;
+}
+
+
+
+</string>
+       </property>
+       <property name="text">
+        <string>+</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="circleVertexChoice">
+       <property name="geometry">
+        <rect>
+         <x>5</x>
+         <y>80</y>
+         <width>73</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Arial</family>
+         <pointsize>13</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QRadioButton:hover {
+border-radius: 15px; 
+border-style: solid;
+border-color: rgb(61, 217, 245);
+border-width: 2px; }
+
+QRadioButton:checked {
+border-radius: 15px; 
+border-style: solid;
+border-color: rgb(61, 217, 245);
+border-width: 2px; }</string>
+       </property>
+       <property name="text">
+        <string>Circle</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="enableVertexChoice">
+       <property name="geometry">
+        <rect>
+         <x>83</x>
+         <y>80</y>
+         <width>71</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Arial</family>
+         <pointsize>13</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Enable</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="changeProjection">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>260</y>
+        <width>201</width>
+        <height>121</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background: rgb(192, 192, 192);
+border-radius: 20px; 
+
+
+</string>
+      </property>
+      <property name="title">
+       <string>Projection settings</string>
+      </property>
+      <widget class="QPushButton" name="projectionParallelChoice">
+       <property name="geometry">
+        <rect>
+         <x>15</x>
+         <y>30</y>
+         <width>171</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Arial</family>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+	border-radius: 12px; 
+	color: rgb(94, 94, 94);
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb(61, 217, 245), stop:1 rgb(235, 235, 235));
+}
+
+QPushButton:pressed {
+   	color: rgb(0, 0, 0);
+	border-radius: 12px;  
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb(61, 217, 245), stop:1 rgb(235, 235, 235));
+	font-size: 16px;
+}
+
+
+</string>
+       </property>
+       <property name="text">
+        <string>Parallel</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="projectionCentralChoice">
+       <property name="geometry">
+        <rect>
+         <x>15</x>
+         <y>75</y>
+         <width>171</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Arial</family>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+	border-radius: 12px; 
+	color: rgb(94, 94, 94);
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb(235, 235, 235), stop:1 rgb(240, 53, 218));
+}
+
+QPushButton:pressed {
+   	color: rgb(0, 0, 0);
+	border-radius: 12px;  
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb(235, 235, 235), stop:1 rgb(240, 53, 218));
+	font-size: 16px;
+}
+
+
+</string>
+       </property>
+       <property name="text">
+        <string>Central</string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>670</x>
+      <y>460</y>
+      <width>511</width>
+      <height>37</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <widget class="QPushButton" name="pushButtonOpenFile">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>25</height>
+        </size>
+       </property>
+       <property name="baseSize">
+        <size>
+         <width>0</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Arial</family>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+	color: qlineargradient(spread:pad, x1:10, y1:10, x2:10, y2:20, stop:0 rgb(240, 53, 218), stop:1 rgb(61, 217, 245));
+	border-radius:  12px;
+  	background-color: rgb(235, 235, 235);
+}
+
+QPushButton:pressed {
+   	color: rgb(235, 235, 235);
+	border-radius: 12px;  
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb(240, 53, 218), stop:1 rgb(61, 217, 245));
+}
+
+</string>
+       </property>
+       <property name="text">
+        <string>Open file</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButtonMove">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>25</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Arial</family>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+	color: qlineargradient(spread:pad, x1:10, y1:10, x2:10, y2:20, stop:0 rgb(240, 53, 218), stop:1 rgb(61, 217, 245));
+	border-radius:  12px;
+  	background-color: rgb(235, 235, 235);
+}
+
+QPushButton:pressed {
+   	color: rgb(235, 235, 235);
+	border-radius: 12px;  
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb(240, 53, 218), stop:1 rgb(61, 217, 245));
+}
+
+</string>
+       </property>
+       <property name="text">
+        <string>Move</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButtonSettings">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>25</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Arial</family>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+	color: qlineargradient(spread:pad, x1:10, y1:10, x2:10, y2:20, stop:0 rgb(240, 53, 218), stop:1 rgb(61, 217, 245));
+	border-radius:  12px;
+  	background-color: rgb(235, 235, 235);
+}
+
+QPushButton:pressed {
+   	color: rgb(235, 235, 235);
+	border-radius: 12px;  
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb(240, 53, 218), stop:1 rgb(61, 217, 245));
+}
+
+
+</string>
+       </property>
+       <property name="text">
+        <string>Settings</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="takeScreenshot">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>25</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Arial</family>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+	color: qlineargradient(spread:pad, x1:10, y1:10, x2:10, y2:20, stop:0 rgb(240, 53, 218), stop:1 rgb(61, 217, 245));
+	border-radius:  12px;
+  	background-color: rgb(235, 235, 235);
+}
+
+QPushButton:pressed {
+   	color: rgb(235, 235, 235);
+	border-radius: 12px;  
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb(240, 53, 218), stop:1 rgb(61, 217, 245));
+}
+
+
+</string>
+       </property>
+       <property name="text">
+        <string>Screenshot</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="takeGIF">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>25</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Arial</family>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+	color: qlineargradient(spread:pad, x1:10, y1:10, x2:10, y2:20, stop:0 rgb(240, 53, 218), stop:1 rgb(61, 217, 245));
+	border-radius:  12px;
+  	background-color: rgb(235, 235, 235);
+}
+
+QPushButton:pressed {
+   	color: rgb(235, 235, 235);
+	border-radius: 12px;  
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb(240, 53, 218), stop:1 rgb(61, 217, 245));
+}
+
+</string>
+       </property>
+       <property name="text">
+        <string>GIF</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="layoutWidget_1">
+    <property name="geometry">
+     <rect>
+      <x>700</x>
+      <y>0</y>
+      <width>453</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QLabel" name="name">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>58</width>
+         <height>20</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>58</width>
+         <height>20</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Arial</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Name:</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="show_name">
+       <property name="minimumSize">
+        <size>
+         <width>72</width>
+         <height>20</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>300</width>
+         <height>20</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Arial</family>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(235, 235, 235);
+border-radius: 10px; </string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="vertexes">
+       <property name="minimumSize">
+        <size>
+         <width>61</width>
+         <height>20</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>65</width>
+         <height>20</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Arial</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Vertexes:</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="count_vertexes">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>80</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>80</width>
+         <height>20</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>300</width>
+         <height>20</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Arial</family>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(235, 235, 235);
+border-radius: 8px; </string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="poligons">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>20</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>58</width>
+         <height>20</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Arial</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Poligons:</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="count_poligons">
+       <property name="minimumSize">
+        <size>
+         <width>80</width>
+         <height>20</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>300</width>
+         <height>20</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Arial</family>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(235, 235, 235);
+border-radius: 8px; </string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>OGWidget</class>
+   <extends>QWidget</extends>
+   <header>ogl_widget.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

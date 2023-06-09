@@ -1,0 +1,110 @@
+#include <check.h>
+
+#include "backend.h"
+
+FILE *file;
+
+#test fill_vertexes
+data_t obj = {0};
+file = fopen("test_obj/test.obj", "r");
+count_of_vertexes(file, &obj);
+rewind(file);
+fill(&obj, file);
+ck_assert_double_eq_tol(obj.V[0], 0.1234, 1e-06);
+ck_assert_double_eq_tol(obj.V[3], 1.5678, 1e-06);
+free(obj.V);
+free(obj.polygon);
+fclose(file);
+
+#test move_by_y
+data_t obj = {0};
+file = fopen("test_obj/test.obj", "r");
+count_of_vertexes(file, &obj);
+rewind(file);
+fill(&obj, file);
+move_y(&obj, 1);
+ck_assert_double_eq_tol(obj.V[1], -10.8888, 1e-06);
+ck_assert_double_eq_tol(obj.V[4], -20.7610, 1e-06);
+free(obj.V);
+free(obj.polygon);
+fclose(file);
+
+#test move_by_x
+data_t obj = {0};
+file = fopen("test_obj/test.obj", "r");
+count_of_vertexes(file, &obj);
+rewind(file);
+fill(&obj, file);
+move_x(&obj, 1);
+ck_assert_double_eq_tol(obj.V[0], 1.1234, 1e-06);
+ck_assert_double_eq_tol(obj.V[3], 2.5678, 1e-06);
+free(obj.V);
+free(obj.polygon);
+fclose(file);
+
+#test move_by_z
+data_t obj = {0};
+file = fopen("test_obj/test.obj", "r");
+count_of_vertexes(file, &obj);
+rewind(file);
+fill(&obj, file);
+move_z(&obj, 1);
+ck_assert_double_eq_tol(obj.V[2], 18.1789, 1e-06);
+ck_assert_double_eq_tol(obj.V[5], 32.5371, 1e-06);
+free(obj.V);
+free(obj.polygon);
+fclose(file);
+
+#test rotation_by_x
+data_t obj = {0};
+file = fopen("test_obj/test.obj", "r");
+count_of_vertexes(file, &obj);
+rewind(file);
+fill(&obj, file);
+rotation_x(&obj, 1);
+rotation_x(&obj, -1);
+ck_assert_double_eq_tol(obj.V[1], -11.8888, 1e-06);
+ck_assert_double_eq_tol(obj.V[2], 17.1789, 1e-06);
+free(obj.V);
+free(obj.polygon);
+fclose(file);
+
+#test rotation_by_y
+data_t obj = {0};
+file = fopen("test_obj/test.obj", "r");
+count_of_vertexes(file, &obj);
+rewind(file);
+fill(&obj, file);
+rotation_y(&obj, 1);
+rotation_y(&obj, -1);
+ck_assert_double_eq_tol(obj.V[0], 0.1234, 1e-06);
+ck_assert_double_eq_tol(obj.V[2], 17.1789, 1e-06);
+free(obj.V);
+free(obj.polygon);
+fclose(file);
+
+#test rotation_by_z
+data_t obj = {0};
+file = fopen("test_obj/test.obj", "r");
+count_of_vertexes(file, &obj);
+rewind(file);
+fill(&obj, file);
+rotation_z(&obj, 1);
+rotation_z(&obj, -1);
+ck_assert_double_eq_tol(obj.V[1], -11.8888, 1e-06);
+ck_assert_double_eq_tol(obj.V[0], 0.1234, 1e-06);
+free(obj.V);
+free(obj.polygon);
+fclose(file);
+
+#test zoom_object
+data_t obj = {0};
+file = fopen("test_obj/test.obj", "r");
+count_of_vertexes(file, &obj);
+rewind(file);
+fill(&obj, file);
+zoom(&obj, 2);
+ck_assert_double_eq_tol(obj.V[5], 31.5371 * 2, 1e-4);
+free(obj.V);
+free(obj.polygon);
+fclose(file);
